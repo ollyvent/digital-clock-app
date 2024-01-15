@@ -5,7 +5,25 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
-  background: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D) no-repeat;
+  background: url(./img/aaron-burden-yzgF-AQt1sQ-unsplash.jpg) no-repeat;
   background-size: cover;
+  background-position: center center;
+  color: rgb(0, 0, 0);
+  font-family: quantico, sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
 
+.content {
+  background: rgba(173, 226, 199, 0.589);
+  border-radius: 5px;
+  padding: 10px;
+  border: solid 1px rgb(240, 161, 15);
+  text-shadow: rgb(240, 161, 15) 1px 1px 4px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: viga;
 }
