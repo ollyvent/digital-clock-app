@@ -11,11 +11,11 @@ body {
   color: rgb(0, 0, 0);
   font-family: quantico, sans-serif;
   font-size: 20px;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
 
 .content {
-  background: rgba(173, 226, 199, 0.589);
+  background: rgba(255, 255, 255, 0.511);
   border-radius: 5px;
   padding: 10px;
   border: solid 1px rgb(240, 161, 15);
@@ -24,6 +24,54 @@ body {
 
 h2 {
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 17px;
   font-family: viga;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.clock{
+  display: flex;
+}
+
+.clock div{
+  margin: 10px;
+  position: relative;
+
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background-color: rgba(99, 129, 119, 0.699);
+  padding: 0 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.clock #text{
+  border-radius: 0 0 5px 5px;
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(0, 100, 0, 0.671);
+}
+
+.clock #hour, #minutes, #seconds{
+  border-radius: 5px 5px 0 0;
+}
+
+.clock #am-pm{
+  border-radius: 5px;
+  background-color: rgba(99, 129, 119, 0.699);
+  font-size: 20px;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  bottom: 0;
 }
