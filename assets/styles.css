@@ -11,7 +11,7 @@ body {
   color: rgb(0, 0, 0);
   font-family: quantico, sans-serif;
   font-size: 20px;
-  /* letter-spacing: 3px; */
+  overflow: hidden;
 }
 
 .content {
@@ -31,14 +31,13 @@ h2 {
   justify-content: center;
 }
 
-.clock{
+.clock {
   display: flex;
 }
 
-.clock div{
+.clock div {
   margin: 10px;
   position: relative;
-
 }
 
 .clock span {
@@ -53,7 +52,7 @@ h2 {
   font-size: 40px;
 }
 
-.clock #text{
+.clock #text {
   border-radius: 0 0 5px 5px;
   height: 30px;
   font-size: 10px;
@@ -62,11 +61,13 @@ h2 {
   background: rgba(0, 100, 0, 0.671);
 }
 
-.clock #hour, #minutes, #seconds{
+.clock #hour,
+#minutes,
+#seconds {
   border-radius: 5px 5px 0 0;
 }
 
-.clock #am-pm{
+.clock #am-pm {
   border-radius: 5px;
   background-color: rgba(99, 129, 119, 0.699);
   font-size: 20px;
