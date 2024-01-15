@@ -12,10 +12,33 @@ function updateClock(){
         
     let amPm = 'AM';
 
+   
     // condition to update the am-pm element
     if(hr>12){
         hr=hr-12;
         amPm='PM'
+
+     // condition to add 0 before hour if less than 10
+     if(hr<10){
+        hr= '0' + hr
+    }else{
+        hr=hr
+    }
+
+    // condition to add 0 before minute if less than 10
+    if(min<10){
+        min= '0' + min
+    }else{
+        min=min
+    }
+
+    // condition to add 0 before second if less than 10
+    if(sec<10){
+        sec= '0' + sec
+    }else{
+        sec=sec
+    }
+
     }
     hourEl.innerText = hr;
     minnutesEl.innerText = min;
