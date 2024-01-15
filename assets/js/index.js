@@ -12,6 +12,7 @@ function updateClock(){
         
     let amPm = 'AM';
 
+    // condition to update the am-pm element
     if(hr>12){
         hr=hr-12;
         amPm='PM'
@@ -20,6 +21,13 @@ function updateClock(){
     minnutesEl.innerText = min;
     secondsEl.innerText = sec;
     amPmEl.innerText = amPm;
+
+    // call function every 1 minute
+    setTimeout(()=>{
+        updateClock()
+    }, 1000)
+
 }
 
+//call funcion to update time
 updateClock()
