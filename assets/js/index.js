@@ -10,4 +10,16 @@ function updateClock(){
     let min = new Date().getMinutes();
     let sec = new Date().getSeconds();
         
+    let amPm = 'AM';
+
+    if(hr>12){
+        hr=hr-12;
+        amPm='PM'
+    }
+    hourEl.innerText = hr;
+    minnutesEl.innerText = min;
+    secondsEl.innerText = sec;
+    amPmEl.innerText = amPm;
 }
+
+updateClock()
